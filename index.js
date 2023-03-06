@@ -6,14 +6,14 @@ const botonesOperadores = document.querySelectorAll('.operador');
 const deleteChar = document.getElementById('borrar1');
 const deleteAll = document.getElementById('borraTodo');
 
+deleteChar.addEventListener('click', () => display.borrar());
+deleteAll.addEventListener('click', () => display.borrarTodo());
+
 const display = new Display(displayValorAnterior, displayValorActual);
 
 botonesNumeros.forEach(boton => {
-    boton.addEventListener('click', () => display.agregarNumero(boton.innerHTML))
+    boton.addEventListener('click', () => display.agregarNumero(boton.innerHTML));
 });
-
-deleteChar.addEventListener('click', () => display.borrar());
-deleteAll.addEventListener('click', () => display.borrarTodo());
 
 botonesOperadores.forEach(boton => {
     boton.addEventListener('click', () => display.computar(boton.value))
