@@ -1,2 +1,6 @@
-# Calculadora
-Proyecto calculadora con HTML, CSS Y JAVASCRIPT
+# Calculadora 
+
+Tecnologías:
+- HTML
+- Css
+- JavaScript
